@@ -1,0 +1,20 @@
+[project]
+authors = ["victoryang00 <yangyiwei2000@gmail.com>"]
+channels = ["conda-forge", "https://conda.modular.com/max"]
+description = "Add a short description here"
+name = "mojo_jax_triton"
+platforms = ["linux-64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+max = ">=24.5.0,<25"
+pytorch = ">=2.4.0,<3"
+numpy = "<2.0"
+onnx = "==1.16.0"
+transformers = "==4.40.1"
+datasets = "==2.18"
+pip = ">=24.2,<25"
+pathlib = ">=1.0.1,<2"
+python = ">=3.12.7,<4"
