@@ -17,7 +17,8 @@ set -e
 CURRENT_DIR=$(dirname "$0")
 # Make sure we're running from inside the directory containing this file.
 cd "$CURRENT_DIR"
-
+MAX_PKG_DIR="${MAX_PKG_DIR:-$CONDA_PREFIX}"
+export MAX_PKG_DIR
 # Build the example
 cmake -B build -S "$CURRENT_DIR"
 cmake --build build

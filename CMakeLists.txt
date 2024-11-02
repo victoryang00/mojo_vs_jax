@@ -19,4 +19,4 @@ list(APPEND CMAKE_MODULE_PATH "$ENV{MAX_PKG_DIR}/lib/cmake")
 include(AddMaxEngine)
 
 add_executable(mlp main.c)
-target_link_libraries(bert PUBLIC max-engine)
+target_link_libraries(mlp PUBLIC max-engine)
